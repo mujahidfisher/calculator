@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="heading-1">
-    <h1>Mujahid Fisher</h1>
+      <h1>Mujahid Fisher</h1>
     </div>
     <div class="heading-2">
-    <h3>Calculator</h3>
-    </div>   
+      <h3>Calculator</h3>
+    </div>
 
     <div class="container">
-        <div class="output" >
-            <input type="text" class="display" id="input" readonly>
+      <div class="output">
+        <input type="text" class="display" id="input" readonly />
+      </div>
+      <div class="row-1">
+        <div class="col-1">
+          <button class="numb1" onclick="remove_valueAll()">CE</button>
+          <button class="numb2" onclick="remove_value()">
+            <img
+              src="./img/backspace.png"
+              alt="backspace"
+              width="20px"
+              loading="lazy"
+            />
+          </button>
         </div>
-        <div class="row-1">
-            <div class="col-1">
-                <button class="numb1" onclick="remove_valueAll()">
-                    CE
-                </button>
-                <button class="numb2" onclick="remove_value()">
-                    <img src="./img/backspace.png" alt="backspace" width="20px" loading="lazy">
-                </button>
-            </div>
-        </div>
+      </div>
 
-        <div class="row-2">
-            <div class="col-2">
-                <button class="numb" onclick="add_1()">1</button>
-                <button class="numb" onclick="add_2()">2</button>
-                <button class="numb" onclick="add_3()">3</button>
-                <button class="numb" onclick="add_addition()">+</button>
-            </div>
+      <div class="row-2">
+        <div class="col-2">
+          <button class="numb" onclick="add_1()">1</button>
+          <button class="numb" onclick="add_2()">2</button>
+          <button class="numb" onclick="add_3()">3</button>
+          <button class="numb" onclick="add_addition()">+</button>
         </div>
+      </div>
 
-        <div class="row-3">
-            <div class="col-2">
-                <button class="numb" onclick="add_4()">4</button>
-                <button class="numb" onclick="add_5()">5</button>
-                <button class="numb" onclick="add_6()">6</button>
-                <button class="numb" onclick="add_subtraction()">-</button>
-            </div>
+      <div class="row-3">
+        <div class="col-2">
+          <button class="numb" onclick="add_4()">4</button>
+          <button class="numb" onclick="add_5()">5</button>
+          <button class="numb" onclick="add_6()">6</button>
+          <button class="numb" onclick="add_subtraction()">-</button>
         </div>
+      </div>
 
-        <div class="row-4">
-            <div class="col-2">
-                <button class="numb" onclick="add_7()">7</button>
-                <button class="numb" onclick="add_8()">8</button>
-                <button class="numb" onclick="add_9()">9</button>
-                <button class="numb" onclick="add_times()">x</button>
-            </div>
+      <div class="row-4">
+        <div class="col-2">
+          <button class="numb" onclick="add_7()">7</button>
+          <button class="numb" onclick="add_8()">8</button>
+          <button class="numb" onclick="add_9()">9</button>
+          <button class="numb" onclick="add_times()">x</button>
         </div>
+      </div>
 
-        <div class="row-5">
-            <div class="col-2">
-                <button class="numb" onclick="add_dot()">.</button>
-                <button class="numb" onclick="add_0()">0</button>
-                <button class="numb equal" onclick="add_equal()">=</button>
-                <button class="numb" onclick="add_divide()">/</button>
-            </div>
+      <div class="row-5">
+        <div class="col-2">
+          <button class="numb" onclick="add_dot()">.</button>
+          <button class="numb" onclick="add_0()">0</button>
+          <button class="numb equal" onclick="add_equal()">=</button>
+          <button class="numb" onclick="add_divide()">/</button>
         </div>
+      </div>
     </div>
-    
+
     <script src="./script/code.js"></script>
-</body>
+  </body>
 </html>
