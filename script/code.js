@@ -1,14 +1,17 @@
 let output = document.querySelector("#input");
 let answerArray = [];
+let dotArray = [];
 // removers
 function remove_valueAll() {
   let output = document.getElementById("input");
   output.value = "";
+  dotArray = [];
 }
 function remove_value() {
   let output = input.value.split("");
   output.pop();
   input.value = output.join("");
+  dotArray.pop();
 }
 
 // Numbers
@@ -56,24 +59,37 @@ function add_0() {
 function add_addition() {
   let output = document.getElementById("input");
   output.value += "+";
+  dotArray = [];
+
 }
 function add_subtraction() {
   let output = document.getElementById("input");
   output.value += "-";
+  dotArray = [];
+
 }
 function add_times() {
   let output = document.getElementById("input");
   output.value += "*";
+  dotArray = [];
+
 }
 function add_divide() {
   let output = document.getElementById("input");
   output.value += "/";
+  dotArray = [];
+
 }
 document.querySelector(".equal").addEventListener("click", (e) => {
-  output.value = eval(output.value);
+  output.value = eval(output.value).toFixed(2);
 });
 
 function add_dot() {
   let output = document.getElementById("input");
-  output.value += ".";
+  if(dotArray.includes('.')){
+    return;
+  } else {
+    output.value += ".";
+    dotArray.push('.')
+  }
 }
