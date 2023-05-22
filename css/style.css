@@ -1,0 +1,65 @@
+body {
+    background-color: aqua;
+}
+
+.heading-1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.heading-2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    border: black 4px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+.col-2 {
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.numb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.numb1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.numb2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    float: right;
+}
+.numb2:hover {
+    background-color: red;
+}
+.numb1:hover {
+    background-color: rgb(212, 0, 255);
+}
+.numb:hover {
+    background-color: pink;
+}
+
+.output {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: black 2px solid;
+    border-radius: 10px;
+}
